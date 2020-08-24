@@ -1,0 +1,23 @@
+.main-area {    
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 10px;
+    width: 100% - 20px;
+    height: 100%;
+
+    border: 2px solid lightgreen;
+    background-color: rgb(199, 255, 199);
+    border-radius: 10px;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main-image {
+    max-height: 400px;
+}
