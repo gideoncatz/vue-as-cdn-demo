@@ -3,17 +3,25 @@
 <head>
     <title>My Cool website</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 <body>
     <div class="main-area">
         <div class="main-image-container">
             <img src="./assets/badminton-1428047_1280.jpg" class="main-image" alt="shuttle and racket">
         </div>
-        <h1>This is my cool webpage about badminton</h1>
+
+        <div id="my-app-root" class="my-app-container">
+            <div>Hello {{name}}</div>
+        </div>
+        
+        <h1>This is my cool webpage about badminton</h1>        
         <h2>Here is an already existing text</h2>
         <p>This is some content regarding... badminton. Sunt mollit cillum consectetur commodo consectetur nostrud commodo cupidatat pariatur incididunt ipsum esse nostrud veniam. Eu elit ut dolore velit adipisicing. Ad consectetur voluptate exercitation esse deserunt sint duis anim mollit dolore dolore. Sunt amet pariatur ad occaecat duis dolore laborum esse ipsum fugiat aute exercitation esse. Labore labore veniam mollit fugiat.</p>
         <p>Anim irure magna Lorem commodo eiusmod anim non laboris duis dolor ipsum sit officia est. Sunt et et enim aliqua consequat ea aute excepteur excepteur laborum exercitation labore non. Deserunt cillum magna commodo tempor. Est ut sint enim enim nisi duis sit quis reprehenderit. Do ut et sint anim magna consectetur mollit nisi amet commodo dolore mollit ex. Elit quis occaecat velit quis deserunt mollit magna.</p>
         <p>Nostrud velit occaecat ad amet ea in ad pariatur ullamco in consectetur in labore est. Tempor velit irure labore enim ea sit aliquip. Qui adipisicing dolor qui fugiat ad duis dolore fugiat nostrud occaecat.</p>
     </div>
+    <script src="app.js"></script>
 </body>
 </html>
