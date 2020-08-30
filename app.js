@@ -2,14 +2,15 @@ Vue.component('player', {
     template: 
     `
     <div>
-        <div>Hi, I'm a reusable player component!</div>
+        <div>Player: {{ name }}</div>
     </div>
-    `
+    `,
+    props: ['name']
 });
 
 new Vue({
     el: '#my-app-root',
     data: {
-        name: 'Luke Skywalker'
+        stage: 'Semi-final'
     }
 });

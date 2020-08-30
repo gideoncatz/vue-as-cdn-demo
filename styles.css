@@ -30,3 +30,7 @@
     width: 800px;
     height: 300px;
 }
+
+.match-title {
+    font-weight: bold;
+}
