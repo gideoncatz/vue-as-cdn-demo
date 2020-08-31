@@ -1,11 +1,17 @@
 Vue.component('player', {
     template: 
     `
-    <div>
-        <div>Player: {{ name }}</div>
+    <div class="player-container">
+        <div class="player-name">{{ name }}</div>
+        <div class="player-score ">{{ score }}</div>
     </div>
     `,
-    props: ['name']
+    props: ['name'],
+    data() {
+        return {
+            score: 0
+        };
+    }
 });
 
 new Vue({
