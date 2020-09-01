@@ -3,7 +3,10 @@ Vue.component('player', {
     `
     <div class="player-container">
         <div class="player-name">{{ name }}</div>
-        <div class="player-score ">{{ score }}</div>
+        <div class="player-scores-btn-wrap" @click="incrementScore()">
+            <div class="player-scores-btn">Scores!</div>
+        </div>
+        <div class="player-current-score">{{ score }}</div>
     </div>
     `,
     props: ['name'],
@@ -11,6 +14,11 @@ Vue.component('player', {
         return {
             score: 0
         };
+    },
+    methods: {
+        incrementScore() {
+            this.score++;
+        }
     }
 });
 

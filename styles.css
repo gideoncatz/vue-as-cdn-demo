@@ -30,6 +30,11 @@
     margin: 10px;
     width: 800px;
     height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .match-title {
@@ -43,12 +48,12 @@
 }
 
 .player-name {
-    width: 80%;
+    width: 60%;
     padding: 10px;    
     background-color: rgb(111, 231, 131);
 }
 
-.player-score {
+.player-current-score {
     width: 20%;
     padding: 5px;
     font-family: 'Orbitron', sans-serif;
@@ -57,4 +62,27 @@
     color: lightgreen;
     background-color: rgb(5, 22, 5);
     border: 5px solid rgb(8, 46, 8);
+}
+
+.player-scores-btn-wrap {
+    width: 20%;
+    background-color: rgb(111, 231, 131);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px
+}
+
+.player-scores-btn {
+    cursor: pointer;
+    user-select: none;
+
+    background-color: rgb(32, 114, 32);
+    border: 1px solid rgb(23, 112, 23);
+    color: white;
+
+    border-radius: 15px;
+    padding: 5px;    
+
+    box-shadow: 2px 2px 5px 2px rgb(2, 78, 2);
 }
