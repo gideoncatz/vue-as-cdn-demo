@@ -18,6 +18,7 @@ Vue.component('player', {
     methods: {
         incrementScore() {
             this.score++;
+            this.$emit('scores', this.score);
         }
     }
 });
@@ -26,5 +27,12 @@ new Vue({
     el: '#my-app-root',
     data: {
         stage: 'Semi-final'
+    },
+    methods: {
+        handleScoresEvent(score) {
+            if (score > 10) {
+                alert('The match is over!');
+            }
+        }
     }
 });

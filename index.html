@@ -15,8 +15,8 @@
 
         <div id="my-app-root" class="my-app-container">
             <div class="match-title">{{ stage }} match</div>
-            <player name="Lin Dan"></player>
-            <player name="Viktor Axelsen"></player>
+            <player name="Lin Dan" @scores="handleScoresEvent"></player>
+            <player name="Viktor Axelsen" @scores="handleScoresEvent"></player>
         </div>
         
         <h1>This is my cool webpage about badminton</h1>        
